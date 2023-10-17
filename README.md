@@ -8,7 +8,7 @@ O Cashflow é uma aplicação desenvolvida com base no padrão de Domain Driven 
 ## Backend
 Desenvolvido utilizando o DotNet Core 6, este projeto foi concebido com foco na escalabilidade, graças ao seu design arquitetônico que promove o desacoplamento de seus componentes, permitindo que cresçam de forma flexível conforme a necessidade.
 Fora utilizado, nesse exemplo, um produtor para dois consumidores, de forma a separar os tipos de transações no fluxo de banco de dados. Esse padrão CQRS, permite que os Comandos, possam ser desvinculados das Queries.
-Nesse, exemplo, existe a separação, mas por questão de processamento e máquina, não apliquei replicas ReadOnly no SQLServer, dos quais seriam complementares ao exemplo das Queries.
+Nesse, exemplo, existe a separação, mas por questão de processamento e máquina, não apliquei réplicas ReadOnly no SQLServer, dos quais seriam complementares ao exemplo das Queries.
 O endpoint de Operations GET faz as solicitações de queries, e o endpoint de Operations POST produz um evento, do qual é consumido em pods fora da stack. Essa segregação foi feita atravez de uma Feature Flag para controle da assinatura do consumidor:
 ```c#
   services.AddMassTransit(mass =>
@@ -29,9 +29,9 @@ Através do uso desta variável de ambiente, escalamos os PODs conforme nossa de
 
 ## Frontend
 
-O frontend deste projeto foi cuidadosamente concebido usando React com TypeScript, incorporando os princípios das tendências modernas do mercado, que são sempre bem-vindas e, muitas vezes, influenciam a estrutura do código no dia a dia. Além disso, optamos por utilizar 'Create React App' ([CRA](https://pt-br.legacy.reactjs.org/docs/create-a-new-react-app.html)), que é uma ferramenta popular para iniciar projetos em React com facilidade e rapidez, garantindo um ponto de partida sólido.
+O frontend deste projeto foi cuidadosamente concebido usando React com TypeScript, incorporando os princípios das tendências modernas do mercado, que são sempre bem-vindas e, muitas vezes, influenciam a estrutura do código no dia a dia. Além disso, optei por utilizar 'Create React App' ([CRA](https://pt-br.legacy.reactjs.org/docs/create-a-new-react-app.html)), que é uma ferramenta popular para iniciar projetos em React com facilidade e rapidez, garantindo um ponto de partida sólido.
 
-Para a estilização, fizemos uso do Styled Components, que oferece uma abordagem eficiente para a criação de estilos em componentes React, permitindo uma estilização mais flexível e modular. Além disso, adotamos o Material-UI ([MUI](https://mui.com/)) para React, uma biblioteca que proporciona um design moderno e responsivo, enriquecendo a experiência do usuário.
+Para a estilização, fiz uso do Styled Components, que oferece uma abordagem eficiente para a criação de estilos em componentes React, permitindo uma estilização mais flexível e modular. Além disso, adotamos o Material-UI ([MUI](https://mui.com/)) para React, uma biblioteca que proporciona um design moderno e responsivo, enriquecendo a experiência do usuário.
 
 A aplicação também implementa a API Context do React como gerenciador de estados da interface, tornando a gestão de dados e interações na aplicação mais eficiente e facilitando a comunicação entre os diferentes componentes da interface.
 
@@ -45,7 +45,7 @@ As imagens estão publicamente acessíveis no [DockerHub](https://hub.docker.com
 
 
 #### Backend
-Para compilar a aplicação do Backend, você pode optar por abri-la no Visual Studio e pressionar simultaneamente as teclas CTRL + SHIFT + B, ou, de forma mais simplificada, executar o arquivo DOCKERFILE. No entanto, a nossa abordagem vai além dessa etapa e inclui a assinatura da imagem no Docker, bem como o envio da imagem para o DockerHub. Para realizar esse processo de forma fácil, basta utilizar o arquivo [publish.bat](https://github.com/jeanpuga/cashflow/backend/publish.bat), que está localizado na pasta do backend.
+Para compilar a aplicação do Backend, você pode optar por abri-la no Visual Studio e pressionar simultaneamente as teclas CTRL + SHIFT + B, ou, de forma mais simplificada, executar o arquivo DOCKERFILE. No entanto, essa abordagem vai além dessa etapa e inclui a assinatura da imagem no Docker, bem como o envio da imagem para o DockerHub. Para realizar esse processo de forma fácil, basta utilizar o arquivo [publish.bat](https://github.com/jeanpuga/cashflow/backend/publish.bat), que está localizado na pasta do backend.
 
 É importante notar que, uma vez que a geração da imagem esteja concluída, o tagueamento da imagem é realizado no nome do usuário logado no DockerHub. Portanto, posteriormente na documentação, será necessário atualizar os nomes das imagens nos arquivos de configuração do Kubernetes (scripts de k8s) para refletir a mudança de nome da imagem."
 
