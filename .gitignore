@@ -443,3 +443,6 @@ build/
 **/obj
 **/build
 
+**/.devcontainer
+**/.vscode
+**/.vs
