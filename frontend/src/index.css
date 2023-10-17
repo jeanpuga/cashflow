@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #0F3245;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+form {
+  margin: 2em 0;
+}
+
+ 
+.group_form {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+label, input {
+  transition: all 0.25s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: .9em;
+  height: 3em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 4pt;
+  padding-left: 10px;
+  cursor: text;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  text-transform:  capitalize;
+  letter-spacing: 0.05em;
+  color: #969696;
+  font-size: 0.8em;
+}
+
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+  font-weight:bold;
+  margin-left:10px;
+  color:rgb(184, 186, 175);
+  }
+
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  font-weight:bold;
+  margin-left:0px;
+  color:rgb(234, 235, 230);
+
+}
+
+input:not([value=""]):not(:focus):invalid{
+  border-bottom: 2px solid red;
+}
+
+input:valid{
+  border-bottom: 2px solid green;
+  background-color:#eef2e9;
+}
+

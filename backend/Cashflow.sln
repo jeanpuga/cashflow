@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "src\API\API.csproj", "{5C9BA926-2053-4CA7-9E16-629CB6D04E6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APPLICATION", "src\APPLICATION\APPLICATION.csproj", "{9256B90B-7C8A-4F56-A62B-86515FA29D94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Presentation", "01.Presentation", "{DBDA83E8-A3D4-4900-B9E9-44675198A89D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Application", "02.Application", "{756FB931-FD3A-4C07-BFD3-882FD2227A9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18EEC790-AA8E-4452-BA0E-153BF8B4B38C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{76380D78-6514-466C-A10A-18CC3824263A}"
+	ProjectSection(SolutionItems) = preProject
+		script\20231010_DUMP.sql = script\20231010_DUMP.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{E205C1FF-2890-49B9-A284-3C21667A333E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cenary 1 - OneMonth", "Cenary 1 - OneMonth", "{4C2D7DBC-6D5B-42F8-8F15-FA749E9F4745}"
+	ProjectSection(SolutionItems) = preProject
+		templates\Cenary 1 - OneMonth\[20230101]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 1 - OneMonth\[20230101]CALCULADORA_CO2_MENSAL.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cenary 2 - 2020 N Month", "Cenary 2 - 2020 N Month", "{4ABDBA0D-463C-468B-A043-1C014D9E5B14}"
+	ProjectSection(SolutionItems) = preProject
+		templates\Cenary 2 - 2020 N Month\[20230101]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 2 - 2020 N Month\[20230101]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 2 - 2020 N Month\[20230201]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 2 - 2020 N Month\[20230201]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 2 - 2020 N Month\[20230301]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 2 - 2020 N Month\[20230301]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 2 - 2020 N Month\[20230401]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 2 - 2020 N Month\[20230401]CALCULADORA_CO2_MENSAL.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cenary 3 - 2023 N Month", "Cenary 3 - 2023 N Month", "{C37109E5-3B11-4B5F-B8DB-7F014179D30B}"
+	ProjectSection(SolutionItems) = preProject
+		templates\Cenary 3 - 2023 N Month\[20200101]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 3 - 2023 N Month\[20200101]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 3 - 2023 N Month\[20200201]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 3 - 2023 N Month\[20200201]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 3 - 2023 N Month\[20200301]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 3 - 2023 N Month\[20200301]CALCULADORA_CO2_MENSAL.xlsx
+		templates\Cenary 3 - 2023 N Month\[20200401]CALCULADORA_CO2_MENSAL.xlsx = templates\Cenary 3 - 2023 N Month\[20200401]CALCULADORA_CO2_MENSAL.xlsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C9BA926-2053-4CA7-9E16-629CB6D04E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9BA926-2053-4CA7-9E16-629CB6D04E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9BA926-2053-4CA7-9E16-629CB6D04E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9BA926-2053-4CA7-9E16-629CB6D04E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9256B90B-7C8A-4F56-A62B-86515FA29D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9256B90B-7C8A-4F56-A62B-86515FA29D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9256B90B-7C8A-4F56-A62B-86515FA29D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9256B90B-7C8A-4F56-A62B-86515FA29D94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C9BA926-2053-4CA7-9E16-629CB6D04E6F} = {DBDA83E8-A3D4-4900-B9E9-44675198A89D}
+		{9256B90B-7C8A-4F56-A62B-86515FA29D94} = {756FB931-FD3A-4C07-BFD3-882FD2227A9A}
+		{76380D78-6514-466C-A10A-18CC3824263A} = {18EEC790-AA8E-4452-BA0E-153BF8B4B38C}
+		{E205C1FF-2890-49B9-A284-3C21667A333E} = {18EEC790-AA8E-4452-BA0E-153BF8B4B38C}
+		{4C2D7DBC-6D5B-42F8-8F15-FA749E9F4745} = {E205C1FF-2890-49B9-A284-3C21667A333E}
+		{4ABDBA0D-463C-468B-A043-1C014D9E5B14} = {E205C1FF-2890-49B9-A284-3C21667A333E}
+		{C37109E5-3B11-4B5F-B8DB-7F014179D30B} = {E205C1FF-2890-49B9-A284-3C21667A333E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8679CFB8-6B66-4DAA-9B75-078B629C2A62}
+	EndGlobalSection
+EndGlobal

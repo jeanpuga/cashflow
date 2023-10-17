@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-producer-pod
+  labels:
+    app: backend-producer-pod
+spec:
+  #replicas: 1
+  selector:
+    matchLabels:
+      service: backend-producer-pod
+  template:
+    metadata:
+      labels:
+        app: backend-producer-pod
+        service: backend-producer-pod
+    spec: 
+      containers:
+      - name: backend-producer-container
+        image: jeanpuga/cashflow-backend:latest
+        ports:
+        - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: backend-producer-configmap

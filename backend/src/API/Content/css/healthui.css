@@ -1,0 +1,14 @@
+﻿:root {
+    --bgMain: #1f1f1f;
+    --fcBase: #fff;
+    --bgMenuActive: #2f2f2f;
+    --bcMenuActive: #b2bb9c;
+    --primaryColor: #1c3785;
+    --secondaryColor: #2f4ea9;
+    --bgMenuActive: #152860;
+    --bgButton: #5ca845;
+    --logoImageUrl: url('/Content/images/logo-cashflow-vertical.svg');
+    --bgAside: var(--primaryColor);
+    --bgTable: #2f2f2f;
+    --bgTableSecondary: #1c3785;
+}

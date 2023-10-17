@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-consumer-pod
+  labels:
+    app: backend-consumer-pod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: backend-consumer-pod
+  template:
+    metadata:
+      labels:
+        app: backend-consumer-pod
+        service: backend-consumer-pod
+    spec: 
+      containers:
+      - name: backend-consumer-container
+        image: jeanpuga/cashflow-backend:latest
+        ports:
+        - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: backend-consumer-configmap

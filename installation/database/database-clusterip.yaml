@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: database-clusterip
+spec:
+  type: ClusterIP
+  ports:
+    - port: 1433
+  selector:
+    app: database-pod

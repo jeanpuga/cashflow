@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-producer-configmap
+data:
+  ConnectionStrings__Database: Server=database-clusterip;Database=Cashflow;User Id=sa;Password=1q2w3e4r@#$;
+  LogOptions__Database: Server=database-clusterip;Database=Cashflow;User Id=sa;Password=1q2w3e4r@#$;
+  RabbitmqOptions__Host: rabbitmq-clusterip-amq
+  RabbitmqOptions__Url: http://rabbitmq-clusterip-http
+  LogOptions__Url: http://seqlog-clusterip-ingestion
+  APIS__GetSeqlogHealthcheck: http://seqlog-clusterip-http
+  BASE_URL_FRONTEND: http://localhost:30050
+  FeatureFlags__ConsumeOperationsFeatureOn: "false"
+  FeatureFlags__LoggingOperationsFeatureOn: "true"
+  HealthcheckOptions__Url: http://backend-producer-clusterip

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq-clusterip-http
+spec:
+  type: ClusterIP
+  ports:
+  - port: 15672
+  selector:
+    app: rabbitmq-pod

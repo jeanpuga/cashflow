@@ -1,0 +1,15 @@
+﻿.topbar-wrapper img[alt="Swagger UI"], .topbar-wrapper span {
+    visibility: hidden;
+}
+
+.topbar-wrapper .link:after {
+    content: url('/Content/images/logo-cashflow-mini.png');
+    color: #fff;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10px;
+}

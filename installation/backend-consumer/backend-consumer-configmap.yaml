@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-consumer-configmap
+data:
+  ConnectionStrings__Database: Server=database-clusterip;Database=Cashflow;User Id=sa;Password=1q2w3e4r@#$;
+  LogOptions__Database: Server=database-clusterip;Database=Cashflow;User Id=sa;Password=1q2w3e4r@#$;
+  RabbitmqOptions__Host: rabbitmq-clusterip-amq
+  RabbitmqOptions__Url: http://rabbitmq-clusterip-http
+  LogOptions__Url: http://seqlog-clusterip-ingestion
+  APIS__GetSeqlogHealthcheck: http://seqlog-clusterip-http
+  FeatureFlags__ConsumeOperationsFeatureOn: "true"
+  FeatureFlags__LoggingOperationsFeatureOn: "true"
