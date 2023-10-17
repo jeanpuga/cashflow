@@ -75,8 +75,8 @@ Para deploiar a aplicação, basta ir a pasta [installation](https://github.com/
 
 ### Deploiar a aplicação refazendo as imagens
 Para renovar o deploy nas imagend é necessário trocar seus nomens dentro de dois scripts:
--[installation](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-consumer/backend-consumer-pod.yaml)
--[installation](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-producer/backend-producer-pod.yaml)
+-[backend-consumer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-consumer/backend-consumer-pod.yaml)
+-[backend-producer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-producer/backend-producer-pod.yaml)
 
 Note que no campo imagem, o nome do usuário logado, se destaca, é nesse ponto que iremos atuar a substituição, segue o exemplo abaixo:
 
@@ -89,7 +89,7 @@ Note que no campo imagem, o nome do usuário logado, se destaca, é nesse ponto 
         ports:
 
 ```
-Uma vez realizado, os renames, basta rodar o passo anterior "[Deploiar a aplicação sem refazer as imagens](##)"
+Uma vez realizado, os renames, basta rodar o passo anterior "[Deploiar a aplicação sem refazer as imagens](https://github.com/jeanpuga/cashflow#deploiar-a-aplica%C3%A7%C3%A3o-sem-refazer-as-imagens)"
 
 ### Banco de dados, DDL e DML
 Existem duas abordagens para implantar os scripts: uma delas envolve o uso da linha de comando do Bash, enquanto a outra pode ser realizada por meio de alguma aplicação de SQL que você, caro leitor deste artigo, possa ter instalada. É importante destacar que o sistema de gerenciamento de banco de dados utilizado é o SQL Server, o que implica que não é tão agnóstico quanto gostaríamos para esta seção, mas, ainda assim, atende de forma eficiente aos requisitos do exercício.
