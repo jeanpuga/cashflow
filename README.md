@@ -37,7 +37,7 @@ A aplicação também implementa a API Context do React como gerenciador de esta
 
 
 ## Instalação
-Para executar a aplicação Cashflow, é necessário que a máquina tenha o sistema operacional Windows, além de ter instalados o Docker, o Kubernetes e o Dotnet Core na Versão 6. Vale a pena acentuar que a aplicação é toda multi-plataforma, por em devido a espa;o em disco, não criei um .sh e por essa conta, não testei em ambiente Linux, "ainda". 
+Para executar a aplicação Cashflow, é necessário que a máquina tenha o sistema operacional Windows, além de ter instalados o Docker, o Kubernetes e o Dotnet Core na Versão 6. Vale a pena acentuar que a aplicação é toda multi-plataforma, porém devido a espaço em disco, não criei um .sh e por essa conta, não testei em ambiente Linux, "ainda". 
 
 ### Buildar Imagens
 As imagens estão publicamente acessíveis no [DockerHub](https://hub.docker.com/search?q=jeanpuga), onde você pode encontrar todas as imagens disponíveis. No entanto, caso surjam necessidades específicas ou curiosidades, a seguir, forneço a seguir as instruções para a manutenção.
