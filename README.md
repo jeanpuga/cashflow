@@ -75,8 +75,8 @@ Para deploiar a aplicação, basta ir a pasta [installation](https://github.com/
 
 ### Deploiar a aplicação refazendo as imagens
 Para renovar o deploy nas imagend é necessário trocar seus nomens dentro de dois scripts:
--[backend-consumer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-consumer/backend-consumer-pod.yaml)
--[backend-producer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-producer/backend-producer-pod.yaml)
+- [backend-consumer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-consumer/backend-consumer-pod.yaml)
+- [backend-producer-pod](https://github.com/jeanpuga/cashflow/blob/main/installation/backend-producer/backend-producer-pod.yaml)
 
 Note que no campo imagem, o nome do usuário logado, se destaca, é nesse ponto que iremos atuar a substituição, segue o exemplo abaixo:
 
