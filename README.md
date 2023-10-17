@@ -148,6 +148,11 @@ exemplo:
   }
 ```
 
+## Portas e instalações
+![Cat](./documents/diagram-k8s.png)
+
+
+
 ## Agradecimentos
 Obrigado ao pessoal da consultoria por dispor o tempo de criação para essa aplicação.
 
