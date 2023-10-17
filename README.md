@@ -156,8 +156,8 @@ exemplo:
 ## Agradecimentos
 Obrigado ao pessoal da consultoria por dispor o tempo de criação para essa aplicação.
 
-## Contribute
+## Contribuições
 Contribuições são sempre bem vindas para esse artigo.
 
-## License
+## Licensa
 [![unlicense](https://unlicense.org) Por hora esse código está em direito público, e segue para contribuições.
