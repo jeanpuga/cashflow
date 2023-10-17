@@ -3,7 +3,7 @@
 # Cashflow
 > Aplicação de fluxo de caixa
 
-O Cashflow é uma aplicação desenvolvida com base no padrão de Design Driven Development (DDD) e orientada a eventos e vertical slices. Suas funcionalidades abrangem desde a listagem de transações operacionais até o cadastro de novas transações.
+O Cashflow é uma aplicação desenvolvida com base no padrão de Domain Driven Design (DDD) e orientada a eventos e vertical slices. Suas funcionalidades abrangem desde a listagem de transações operacionais até o cadastro de novas transações.
 
 ## Backend
 Desenvolvido utilizando o DotNet Core 6, este projeto foi concebido com foco na escalabilidade, graças ao seu design arquitetônico que promove o desacoplamento de seus componentes, permitindo que cresçam de forma flexível conforme a necessidade.
